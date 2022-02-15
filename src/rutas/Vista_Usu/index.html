@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            margin: 3em;
+           
+        }
+        .listausuario{
+            text-align: center;
+        }
+        li{
+            margin: 1em;
+            padding: 1em;
+        }
+        .usuario{
+            margin-right: 10em;
+        }
+        .usuario h2{
+            margin-bottom: 1em;
+        }
+        .datos{
+            margin-top: 1em;
+            display: none;
+            border: 2px solid black;
+        }
+        #map{
+            width:  720px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="usuario">
+            <h2>Usuario</h2>
+            <p>Introduce el Id de usuario:</p>
+            <input type="text">
+            <button onclick="buscarusu()">Buscar</button>
+            <div class="datos"></div>
+        </div>
+        <div class="listausuario">
+        </div>
+    </div>
+    
+</body>
+</html>
